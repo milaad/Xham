@@ -1,0 +1,17 @@
+  {
+    "name": "Xhamster",
+    "description": "Access Xhamster from countries that block it or from behind a corporate Firewall.",
+    "author": "Millad",
+    "unblocker_rules": {
+      "Xhamster": {
+        "description": "Unblock Xhamster site",
+        "link": "xhamster.com",
+        "root_url": ["\*://\*\*.xhamster.com/**"],
+        "cmds": [{
+          "hosts": ["xhamster.com"],
+          "dst_dns": "true",
+          "then": "PROXY US"
+        }]
+      }
+    }
+  }
